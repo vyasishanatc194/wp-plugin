@@ -1,0 +1,94 @@
+/* 
+	A couple styles to make the demo page look good
+ */
+body {
+	padding-bottom: 0rem;
+	padding-top: 0rem;
+}
+
+.row {
+	/* margin-bottom: 1rem; */
+}
+/* [class*="col-"] {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+} */
+hr {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+#files {
+    overflow-y: scroll !important;
+    min-height: 320px;
+}
+@media (min-width: 768px) {
+	#files {
+		min-height: 0;
+	}
+}
+#debug {
+	overflow-y: scroll !important;
+	height: 180px;	
+}
+
+.dm-uploader {
+	border: 0.25rem dashed #A5A5C7;
+	text-align: center;
+}
+.dm-uploader.active {
+	border-color: red;
+
+	border-style: solid;
+}
+
+
+/** Add Custom CSS */
+
+h2 { font-size: 30px; margin: 0 0 20px 0; }
+
+
+.form-group { margin-bottom: 30px; }
+
+.form-folder-section{ padding: 0; margin:0; position: relative; }
+.form-folder-section .form-folder-div{ padding: 0px 0; margin:0; position: relative; }
+
+.mlr-5{ margin-right: -5px !important; margin-left: -5px !important;  }
+.plr-5{ padding-right: 5px !important; padding-left: 5px !important; }
+
+.form-new-folder-root { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.center-div { width: 100%; }
+
+.form-new-folder-root .radio-group-div { display: flex; flex-wrap: wrap; margin-bottom: 10px; position: relative; }
+.form-new-folder-root .radio-group-box { padding: 0; margin: 0; width: 50%;  }
+.form-new-folder-root .radio-group-box .checkbox-input{ display: none; }
+.form-new-folder-root .radio-group-box label { width: 100%; background-color: #28a745; padding: 10px 20px; min-height: 50px; display: flex; align-items: center; margin: 0 0 20px 0; border: 1px solid rgba(255, 255, 255, 0.5); color: #fff; cursor: pointer; }
+.form-new-folder-root .radio-group-box label:hover{  background-color: #218838; }
+.form-new-folder-root .radio-group-box label.active{  background-color: #218838; }
+
+
+.form-new-folder-root .radio-group-box label .text-span::before{
+	content: ""; height: 18px; width: 18px; display: block; position: absolute; right: 20px; top: 19px; background-repeat: no-repeat;
+    background-size: contain; opacity: 0;
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='19px' viewBox='0 0 24 19' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Efoursquare-check-in%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='foursquare-check-in' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpolygon id='Path' points='0 9.78697745 8.21865326 18.0392157 24 2.23919744 21.7343295 0 8.21865326 13.5293301 2.23429463 7.53201134'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.form-new-folder-root .radio-group-box label.active .text-span::before{
+	opacity: 1;
+}
+
+label.error { color: #f10707;border: 1px solid;padding: 5px; }
+
+/* .form-new-folder-root .row{ width: 100%; } */
+
+.btn-primary { min-height: 50px; border-radius: 0px; padding: 5px 20px; margin: 0 0 20px 0;    display: flex; align-items: center; justify-content: center;  }
+.form-control { min-height: 50px; padding: 5px 20px; border-radius: 0px; }
+
+.heading-div{ padding: 10px 0; }
+
+.mb-20{ margin-bottom: 20px; }
+
+
+/* .dm-uploader{ margin-bottom: 30px;  }
+.card{ margin-bottom: 30px;  } */
+
+/** End of Add Custom CSS */
